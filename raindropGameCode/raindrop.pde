@@ -22,8 +22,8 @@ class Raindrop {
       loc.y = 0;
       vel.y = 1;
     }
-    boolean isInContactWith(PVector mouse){
-      if (dist(loc.x,loc.y,mouseX,mouseY) <= diam/2){
+    boolean isInContactWith(Bucket b){
+      if (loc.dist(b.loc) <= diam/2 + b.diam/2){
         return true;
       } else {
         return false;

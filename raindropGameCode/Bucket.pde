@@ -3,10 +3,10 @@ class Bucket {
   PVector loc;
   
   Bucket(float idiam){ 
-    idiam = diam;
+    diam = idiam;
     loc = new PVector(mouseX,mouseY);
   }
-  void display2(){
+  void display(){
     fill(255);
     noStroke();
     loc.set(mouseX,mouseY);

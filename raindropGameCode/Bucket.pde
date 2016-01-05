@@ -1,12 +1,12 @@
 class Bucket {
-  float diam;
-  PVector loc;
+  float diam; //declare variables
+  PVector loc; 
   
-  Bucket(float idiam){ 
-    diam = idiam;
-    loc = new PVector(mouseX,mouseY);
+  Bucket(float idiam){ //setup the variables 
+    diam = idiam; //set diameter as idiam
+    loc = new PVector(mouseX,mouseY); //set loc as location of mouse
   }
-  void display(){
+  void display(){ //draw the bucket at mouse location
     fill(255);
     noStroke();
     loc.set(mouseX,mouseY);

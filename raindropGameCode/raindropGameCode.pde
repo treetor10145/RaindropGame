@@ -5,7 +5,7 @@ Bucket b;
 
 void setup() {
   size(1200, 800);
-  b = new Bucket(150);
+  b = new Bucket(10);
   mouse = new PVector();
 }
 
